@@ -132,3 +132,66 @@ Coverity.
 Checkmarx.
 PyCharm.
 
+What are the Quality gates in SonarCube? 
+A quality gate is the best way to enforce a quality policy in your organization. 
+We define a set of Boolean conditions based on measure thresholds against which projects are measured.
+
+Differences between Bitbucket and Github? 
+Both Cloud/Remote repos
+Both are supported by Git 
+Github is free vs Bitbucket isn't 
+Bitbucket owned by Atlassian which is very trust worthy 
+
+Best pratice for Git 
+Individual branches for each developer, Dev, QA, Pre-Prod, Production(Master)
+
+Are you resposnible for Deployment of your project ? 
+Yes, I do we have specific release notes written stating which servers need to be turned down, what commands to be executed 
+Intitally one of my colleauge used to do it and he showed me how to do the entire procedure 
+Now I am comfortable for deploying it by myself 
+
+Different deployment strategies you are aware of, which is most used ? 
+Recreate: Version A is terminated then version B is rolled out.
+Ramped (also known as rolling-update or incremental): Version B is slowly rolled out and replacing version A.
+Blue/Green: Version B is released alongside version A, then the traffic is switched to version B.
+Canary: Version B is released to a subset of users, then proceed to a full rollout.
+A/B testing: Version B is released to a subset of users under specific condition.
+Shadow: Version B receives real-world traffic alongside version A and doesn’t impact the response.
+
+Mostly used Blue Green Deployment 
+
+what is your application Front End, Middle and Back End? 
+Front End: HTML CSS JS
+Back End: MSSQL Database 
+Middle ware: Java + Rest API
+
+We have a EC2 instance, Reaching 100% utilization before it goes down? Tell me the ways  
+1. Create new machine with desired size and move the traffic to this machine 
+2. Auto Scalling by creating a New AMI for the existing server - Set the Target value for CPU when it goes more than a value - Create a new instance and redirect the traffic
+
+Can we change the private ip of the EC2 while the instance is running ? 
+The private IP address of an Amazon EC2 instance will never change. 
+It will not change while an instance is running. It will not change while an instance is stopped. 
+You cannot change a private IP address.
+
+How can I give the list of S3 buckets which are used for an Audit in AWS? 
+Provide the CloudTrail information for the bucket which includes all the logs 
+
+What is Buffer in AWS? 
+Buffer helps to synchronize different components, which gets requests and processes it in an unsynchronized way. 
+It manages the balance between various components in order to maintain the speed and provide a faster service. 
+In AWS buffer also ensures efficiency over traffic or load.
+
+How many VPC can be created ? 
+you can have up to five VPCs in a region
+
+How many Subnets are created in a VPC? 
+Currently you can create 200 subnets per VPC
+
+Does RDS is created in same availability zone or different? 
+Yes. Your standby is automatically provisioned in a different Availability Zone of the same Region as your DB instance primary.
+
+Command to ping a server using Ansible?
+ansible all -m ping -v
+
+

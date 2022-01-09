@@ -1,0 +1,134 @@
+Hello Everyone, 
+
+This is Balu, 
+
+I do have 4.5 years of experience as DevOps engineer current working for Accenture. I am currently working on a Health Care project named Med Fusion. Which is a Leading Health care giant in United states of America. I do work closely with our Developers and QA in the team and follow DevOps methodology by implementing of 4 Cs like Continuous Integration, Continuous Development/Testing, Continuous Deployment and Continuous Delivery. 
+
+As part of my Role, I undergo these responsibilities daily, 
+1. Creating and managing the branches in GitHub.
+2. Merging the code from branches to master. 
+3. Giving accesses to developers based on the need for their code committing repos.
+4. Monitoring the Jenkins builds. if any build got failed try to resolve those issues for future.
+5. Checking the health of instances using Nagios like Monitoring tools.
+6. On the AWS Side based on the requirement I would Create the instances (EC2), Look for any VPC changes and provide User accesses to their own Console.  Also, I have knowledge on S3, VPC, Route 53, Certificate Manager,  IAM, RDS, CloudWatch. 
+7. Work closely with team or developers whether if they have any blockers and resolve those issue ASAP.
+
+As part of this Role, I did gain some knowledge on various tools like, 
+GIT, GITHUB, Maven, SonarQube, Jenkins, Apache Tomcat6.x/7.x, JIRA, Nagios 4.x/5.x, Linux/Unix, Java, J2EE, Docker, AWS, Ansible, Terraform 
+
+Flow of our project lies like this: 
+Code Checkins into Git/Github – Triggers a Build in Maven – Quick Checks done using SonarCube – Hosting done on an AWS EC2 Instance on Apache tomcat server in form a Docker Container. 
+
+
+
+
+
+Git: 
+Distributed Version control tool 
+
+It consists of 3 stages/phase in Git: 
+Working Area 
+Staging/Indexing Area 
+Local repo
+
+Basic Commands: 
+•	git init - Initialize git (Creates a empty local repo)  
+•	git clone "Remote Repo URL" --- Local repo will be clone with Remote repo
+•	git status - Shows status of any upstaging/working area files available or not 
+•	git add . - Add all the files in staging area
+•	git commit -m "Message" - Commits files in staging area to local repo  
+•	git push -u origin master - Add all the files from local repo to remote repo 
+•	git fetch -- Fetch all the files from remote repo to local repo 
+•	git pull - Pull all files from remote repo to working directory
+•	git revert -revertid – Revert back changes based on the revertid provided
+
+Github: 
+Github accounts are remote. 
+Use: Code needs to be stored into a centralized distributed for easy access or not to be lost in case of crash of machines. 
+•	git remote add <name> <url> - To Configuring the Remote Repo 
+
+Jenkins: 
+CI/CD tool 
+Or Build and Release tool 
+We can create Freestyle jobs or pipeline jobs from Jenkins
+We can create jobs in 2 different ways: 
+	
+
+Scripted Syntax 
+node('master') 
+{ 
+stage('Say Hello') { 
+echo 'Hello World' 
+}
+stage('Hello') { 
+echo 'Hello World' 
+}
+}
+	Declarative Syntax
+pipeline {
+    agent none 
+    stages {
+        stage('Compile') {
+            steps {
+                
+            }
+        }
+        stage('Build') {
+            steps {
+                
+            }
+        }
+    }
+}
+
+Maven: 
+Build automation tool, can also be used to check the missing dependencies  
+Stages of Maven: 
+1.	Validate
+2.	Compile
+3.	Test
+4.	Package
+5.	Verify 
+6.	Install 
+7.	Deploy
+POM.xml file is the heart of the Maven. Based on what has been written in the file a Target folder would be created. 
+SonarQube: 
+SonarQube is a Code Quality Assurance tool that collects and analyzes source code and provides reports for the code quality of your project. (Checking Hardcoded Values on variables, Missing Closures/Semicolons (Coding errors), Security Issues (Vulnerability) etc.,)
+SonarQube platform consists of four components: analyzers, server, plugins installed on the server and, a database.
+
+Apache Tomcat: 
+Tomcat runs a HTTP web server environment in which Java code can run.
+Nginx - Another hosting server (We can do load balancing)
+
+
+
+
+
+Interview Questions: 
+Public Sapient 
+--------------
+Command to create Maven Sample Project 
+Ans: mvn archetype:generate -DgroupId=ToolsQA -DartifactId=DemoMavenProject
+
+Before running a Maven project, how to make sure whether if the server has internet connectivity or not? 
+Ans: Go to this location:\Users\your_user_name\.m2\repository.
+In the above mentioned path check the folder has few executable jar files or not.
+If the required jar file is not available for your project, you need internet.
+
+How to integrate Maven with Nexus for storing artifacts? 
+Creation of a hosted repository for snapshots and releases.
+Creation of a proxy repository pointing to Maven Central.
+Creation of a group repository.
+Integration of Maven with Nexus repositories. 
+	Nexus repositories are integrated with Maven using the Mavens settings.xml file. 
+	This file is usually present in ($HOME/.m2, in case of Jenkins /var/lib/Jenkins/.m2) for user-level configuration. 
+	Configurations in this file are applied for all the Maven builds initiated by the user.
+Configurations in the project pom.xml file.
+Configuration of the Jenkins release build.
+
+Alternates for SonarQube? 
+Embold.
+Coverity.
+Checkmarx.
+PyCharm.
+

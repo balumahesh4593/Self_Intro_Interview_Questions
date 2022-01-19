@@ -2,7 +2,9 @@ Hello Everyone,
 
 This is Balu, 
 
-I do have 4.5 years of experience as DevOps engineer current working for Accenture. I am currently working on a Health Care project named Med Fusion. Which is a Leading Health care giant in United states of America. I do work closely with our Developers and QA in the team and follow DevOps methodology by implementing of 4 Cs like Continuous Integration, Continuous Development/Testing, Continuous Deployment and Continuous Delivery. 
+I do have 4.5 years of experience as DevOps engineer current working for Accenture. I am currently working on a Health Care project named Med Fusion. 
+Which is a Leading Health care giant in United states of America. I do work closely with our Developers and QA in the team 
+and follow DevOps methodology by implementing of 4 Cs like Continuous Integration, Continuous Development/Testing, Continuous Deployment and Continuous Delivery. 
 
 As part of my Role, I undergo these responsibilities daily, 
 1. Creating and managing the branches in GitHub.
@@ -10,14 +12,16 @@ As part of my Role, I undergo these responsibilities daily,
 3. Giving accesses to developers based on the need for their code committing repos.
 4. Monitoring the Jenkins builds. if any build got failed try to resolve those issues for future.
 5. Checking the health of instances using Nagios like Monitoring tools.
-6. On the AWS Side based on the requirement I would Create the instances (EC2), Look for any VPC changes and provide User accesses to their own Console.  Also, I have knowledge on S3, VPC, Route 53, Certificate Manager,  IAM, RDS, CloudWatch. 
+6. On the AWS Side based on the requirement I would Create the instances (EC2), Look for any VPC changes 
+and provide User accesses to their own Console.  Also, I have knowledge on S3, VPC, Route 53, Certificate Manager,  IAM, RDS, CloudWatch. 
 7. Work closely with team or developers whether if they have any blockers and resolve those issue ASAP.
 
 As part of this Role, I did gain some knowledge on various tools like, 
 GIT, GITHUB, Maven, SonarQube, Jenkins, Apache Tomcat6.x/7.x, JIRA, Nagios 4.x/5.x, Linux/Unix, Java, J2EE, Docker, AWS, Ansible, Terraform 
 
 Flow of our project lies like this: 
-Code Checkins into Git/Github – Triggers a Build in Maven – Quick Checks done using SonarCube – Hosting done on an AWS EC2 Instance on Apache tomcat server in form a Docker Container. 
+Code Checkins into Git/Github – Triggers a Build in Maven – Quick Checks done using SonarCube – Hosting done on an 
+AWS EC2 Instance on Apache tomcat server in form a Docker Container. 
 
 
 
@@ -93,7 +97,8 @@ Stages of Maven:
 7.	Deploy
 POM.xml file is the heart of the Maven. Based on what has been written in the file a Target folder would be created. 
 SonarQube: 
-SonarQube is a Code Quality Assurance tool that collects and analyzes source code and provides reports for the code quality of your project. (Checking Hardcoded Values on variables, Missing Closures/Semicolons (Coding errors), Security Issues (Vulnerability) etc.,)
+SonarQube is a Code Quality Assurance tool that collects and analyzes source code and provides reports for the code quality
+of your project. (Checking Hardcoded Values on variables, Missing Closures/Semicolons (Coding errors), Security Issues (Vulnerability) etc.,)
 SonarQube platform consists of four components: analyzers, server, plugins installed on the server and, a database.
 
 Apache Tomcat: 
@@ -167,7 +172,8 @@ Middle ware: Java + Rest API
 
 We have a EC2 instance, Reaching 100% utilization before it goes down? Tell me the ways  
 1. Create new machine with desired size and move the traffic to this machine 
-2. Auto Scalling by creating a New AMI for the existing server - Set the Target value for CPU when it goes more than a value - Create a new instance and redirect the traffic
+2. Auto Scalling by creating a New AMI for the existing server - Set the Target value for CPU when it goes 
+more than a value - Create a new instance and redirect the traffic
 
 Can we change the private ip of the EC2 while the instance is running ? 
 The private IP address of an Amazon EC2 instance will never change. 
@@ -197,7 +203,8 @@ ansible all -m ping -v
 
 Virtusa: 
 Write a groovy script where one stage result is dependent on the other one stage? 
-A) If you want to run only some steps, depending on the step you performed you should write test result into variable. And you can analyse value of that variable before running steps.
+A) If you want to run only some steps, depending on the step you performed you should write test result 
+into variable. And you can analyse value of that variable before running steps.
 
 stage('Build') {
     // build application

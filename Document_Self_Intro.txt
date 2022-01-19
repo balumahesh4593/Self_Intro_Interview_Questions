@@ -195,3 +195,30 @@ Command to ping a server using Ansible?
 ansible all -m ping -v
 
 
+Virtusa: 
+Write a groovy script where one stage result is dependent on the other one stage? 
+A) If you want to run only some steps, depending on the step you performed you should write test result into variable. And you can analyse value of that variable before running steps.
+
+stage('Build') {
+    // build application
+}
+
+boolean testPassed = true
+stage('Test') {
+    try{
+        sh 'mvn test'
+    }catch (Exception e){
+        testPassed = false
+    }
+}
+
+stage('Push Artifacts') {
+    if(testPassed){
+        //push to artifactory
+    }
+}
+
+what are the different ways by which i can trigger a cicd pipeline? 
+A) One way is by directly writing a pipeline script on Jenkins, and the other way is by retrieving the Jenkins file from SCM
+
+
